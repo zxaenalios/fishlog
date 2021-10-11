@@ -21,6 +21,7 @@ use App\Http\Controllers\PoinController;
 
 //Route Auth dengan JWT
 Route::group([
+    'middleware' => 'cors',
     'middleware' => 'api',
     'prefix' => 'auth'
 
