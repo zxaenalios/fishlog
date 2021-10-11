@@ -42,7 +42,8 @@ return [
             'prefix' => '',
             'foreign_key_constraints' => env('DB_FOREIGN_KEYS', true),
         ],
-
+        
+        //Pengaturan Database di localhost
         // 'mysql' => [
         //     'driver' => 'mysql',
         //     'url' => env('DATABASE_URL'),
@@ -62,7 +63,9 @@ return [
         //         PDO::MYSQL_ATTR_SSL_CA => env('MYSQL_ATTR_SSL_CA'),
         //     ]) : [],
         // ],
+        //
 
+        //Pengaturan Database di server production
         'mysql' => [
             'driver' => 'mysql',
             'host' => env('DB_HOST', 'db4free.net'),
@@ -77,6 +80,7 @@ return [
             'strict' => true,
             'engine' => null,
         ],
+        //
 
         'pgsql' => [
             'driver' => 'pgsql',
