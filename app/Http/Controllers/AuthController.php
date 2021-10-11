@@ -53,6 +53,7 @@ class AuthController extends Controller
             'password' => 'required|string|confirmed|min:6',
             'phone' => 'required|string|',
             'address' => 'required|string|',
+            'role' => 'user',
             
         ]);
 
