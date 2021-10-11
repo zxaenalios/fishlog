@@ -1,6 +1,7 @@
 <?php
 
 return [
+    
 
     /*
     |--------------------------------------------------------------------------
@@ -188,7 +189,9 @@ return [
     | the aliases are "lazy" loaded so they don't hinder performance.
     |
     */
-
+    //Heroku for log error
+    'log' => 'errorlog',
+    
     'aliases' => [
 
         'App' => Illuminate\Support\Facades\App::class,
